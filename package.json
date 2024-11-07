@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch --minify"
+    "dev": "npx tailwindcss -i ./css/input.css -o ./css/dist/output.css --watch --minify"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
