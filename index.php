@@ -17,11 +17,11 @@
 <body>
 
     <!-- navbar -->
-    <nav class="bg-[#FEFEE3] xxs:bg-red-500 xs:bg-orange-500 md:bg-yellow-500 lg:bg-lime-500 xl:bg-green-500 py-4 flex flex-row justify-between px-4 items-center drop-shadow-lg">
+    <nav class="bg-[#FEFEE3] py-4 flex flex-row justify-between px-4 items-center drop-shadow-lg">
         <!-- logo -->
         <div class="flex flex-row items-center gap-2 hover:cursor-pointer">
-            <img class="h-9 w-9 xs:w-6 xs:h-6 rounded-full" src="img/logo/logo.png" alt="logo.png">
-            <h1 class="xs:text-xs xl:text-lg font-semibold">CodeX Solutions</h1>
+            <img class="md:h-9 md:w-9 xs:w-6 xs:h-6 rounded-full" src="img/logo/logo.png" alt="logo.png">
+            <h1 class="xs:text-xs xl:text-lg font-semibold"><span class="text-[#FAC748] font-bold text-xl">CodeX</span> Solutions</h1>
         </div>
 
         <!-- menu -->
@@ -75,7 +75,7 @@
 
     <main>
         <div class="flex flex-row bg-[#FEFEE3] py-10">
-            <div class="flex md:w-1/2 flex-col justify-evenly px-6 xs:w-full xxs:w-full md:text-left xs:text-center xs:justify-center xs:gap-4 xxs:text-center xxs:justify-center xxs:gap-4 bg-red-500">
+            <div class="flex md:w-1/2 flex-col justify-evenly px-6 xs:w-full xxs:w-full md:text-left xs:text-center xs:justify-center xs:gap-4 xxs:text-center xxs:justify-center xxs:gap-4">
                 <h1 class="md:text-7xl xl:text-8xl font-bebas text-gray-900 xs:text-7xl xxs:text-5xl"><span class="hover:text-green-500 drop-shadow-md transition-all duration-200 ease-in-out">Grow</span> your Online <span class="hover:text-blue-500 drop-shadow-md transition-all duration-200 ease-in-out">World</span> Together</h1>
                 <p class="md:text-sm text-md text-slate-700">Temukan solusi <span>IT</span> anda di sini</p>
                 <span><a href="#" class="md:scale-75 lg:scale-100 bg-transparent border-2 border-black text-black inline-flex gap-4 items-center justify-center px-4 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-200 ease-in-out">Services <i class="fa-solid fa-right-long"></i></a></span>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="flex flex-row items-center space-x-4 px-4 bg-gray-700">
-            <h1 class="mr-4 xxs:text-xs md:text-xl font-semibold text-white">Supported Payment Method : </h1>
+            <h1 class="xxs:text-xs md:text-xl font-semibold text-white">Supported Payment Method : </h1>
             <img src="img/logo/dana.png" alt="dana.png" class="md:w-32 md:h-32 xxs:h-14 xxs:w-h-14 object-contain filter grayscale hover:grayscale-0 transition duration-300">
             <img src="img/logo/ovo.png" alt="ovo.png" class="md:w-32 md:h-32 xxs:h-14 xxs:w-h-14 object-contain filter grayscale hover:grayscale-0 transition duration-300">
             <img src="img/logo/paypal.png" alt="paypal.png" class="md:w-32 md:h-32 xxs:h-14 xxs:w-h-14 object-contain filter grayscale hover:grayscale-0 transition duration-300">
@@ -159,41 +159,124 @@
 
         <div class="flex flex-row ">
 
-            <div class="xs:hidden xs:w-full md:flex xl:w-1/2 overflow-hidden bg-[#fee9cc]">
+            <div class="xs:hidden xs:w-full md:flex xl:w-1/2 overflow-hidden bg-gray-800">
                 <img class="hover:scale-110 hover:drop-shadow-xl object-cover transition-transform duration-300" src="img/illustration/persons_digital.png" alt="persos.png">
             </div>
 
 
-            <div class="xl:flex xl:w-1/2 xl:flex-col bg-[#fee9cc] xl:p-6 md:justify-around">
+            <div class="xl:flex xl:w-1/2 xl:flex-col bg-gray-800 xl:p-6 md:justify-around">
 
-                <h1 class="text-2xl font-bold">Kenapa CodeX?</h1>
-                
+                <h1 class="text-2xl font-bold font-bona text-white">Kenapa <span class="text-[#FAC748] drop-shadow-lg">CodeX</span>?</h1>
+
                 <div class="flex justify-evenly gap-4">
-                    <div class="bg-red-500 inline-flex w-40 h-40 p-6 flex-col text-center rounded-lg">
-                        <h1 class="underline underline-offset-4 font-bold">200+</h1>
-                        <p class="font-light text-slate-700">Kami sudah melayani lebih dari 200+ Client</p>
+                    <div class="bg-[#ABDAFC] drop-shadow-md inline-flex w-40 h-40 p-6 flex-col text-center rounded-lg">
+                        <h1 class="underline underline-offset-4 font-bold text-slate-900">200+</h1>
+                        <p class="font-light text-slate-900">Kami sudah melayani lebih dari 200+ Client</p>
                     </div>
-                    <div class="bg-red-500 inline-flex w-40 h-40 p-6 flex-col text-center rounded-lg">
-                        <h1 class="underline underline-offset-4 font-bold">75+</h1>
-                        <p class="font-light text-slate-700">Kami telah menyelesaikan lebih dari 75+ Project</p>
+                    <div class="bg-[#F88DAD] drop-shadow-md inline-flex w-40 h-40 p-6 flex-col text-center rounded-lg">
+                        <h1 class="underline underline-offset-4 font-bold text-slate-900">75+</h1>
+                        <p class="font-light text-slate-900">Kami telah menyelesaikan lebih dari 75+ Project</p>
                     </div>
-                    <div class="bg-red-500 inline-flex w-40 h-40 p-6 flex-col text-center rounded-lg">
-                        <h1 class="underline underline-offset-4 font-bold">175+</h1>
-                        <p class="font-light text-slate-700">Kami telah mendapat 275 Review Positive</p>
+                    <div class="bg-[#FAC748] drop-shadow-md inline-flex w-40 h-40 p-6 flex-col text-center rounded-lg">
+                        <h1 class="underline underline-offset-4 font-bold text-slate-900">175+</h1>
+                        <p class="font-light text-slate-900">Kami telah mendapat 275 Review Positive</p>
                     </div>
                 </div>
 
-                <div class="bg-blue-500 p-6 rounded-xl">
+                <div class="bg-transparent p-6 rounded-xl shadow-lg text-white">
                     <i class="fa-solid fa-quote-left fa-2xl xs:fa-xs group-hover:text-white"></i>
                     <h1>Kami menyediakan memberikan layanan gratis revisi untuk kesalahan pengerjaan di project</h1>
                     <h1 class="font-light text-xs">*Request tambahan membutuhkan biaya tambahan</h1>
                 </div>
-                
+
+            </div>
+
+        </div>
+
+        <div class="flex p-6 h-96 flex-col justify-evenly">
+            <div class="text-center">
+                <h1 class="text-4xl font-bebas">What <span class="text-[#FAC748]">Client</span> Say!</h1>
+                <p></p>
+            </div>
+            <div class="flex justify-center">
+
+                <!-- card -->
+                <div class="bg-transparent border-2 border-black inline-flex flex-col justify-evenly w-80 h-52 p-4 rounded-lg drop-shadow-xl">
+                    <!-- header -->
+                    <div class="flex flex-row items-center gap-4">
+                        <div>
+                            <img class="w-12 h-12 rounded-full border-2 border-black" src="img/illustration/person_hold_painting.jpg" alt="persons.jpg">
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="font-bold text-[#FAC748]">Client name</h1>
+                            <p class="font-thin text-xs">Web Developer</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officia nostrum</p>
+                    </div>
+                    <div>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-transparentw-full flex justify-center">
+
+            <div class="bg-gray-800 w-[80%] rounded-xl p-4 flex flex-row justify-between items-center drop-shadow-lg">
+                <h1 class="text-white">Siap untuk memulai? </h1>
+                <button class="bg-transparent px-12 py-2 rounded-xl border-2 text-white border-white hover:bg-white hover:text-black hover:scale-110 transition-all ease-in-out duration-200">Start</button>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="flex items-center justify-center min-h-screen bg-gray-100">
+                <div class="w-full max-w-lg p-8 bg-white rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Get in touch <i class="fa-solid fa-handshake"></i></h2>
+                    <form action="#" method="POST" class="space-y-4">
+                        <!-- Nama -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" placeholder="Enter your name" />
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" placeholder="Enter your email" />
+                        </div>
+                        <!-- Pesan -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" rows="4" placeholder="Write your message here"></textarea>
+                        </div>
+                        <!-- Tombol Submit -->
+                        <div class="text-center">
+                            <button type="submit" class="px-6 py-2 text-black bg-transparent border-2 border-black rounded-lg hover:bg-black hover:text-white transform hover:scale-110 focus:ring-4 focus:ring-blue-300 transition-all duration-200 ease-in-out">Send an email</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
         </div>
 
     </main>
+    <footer class="bg-gray-800 flex flex-col h-40 justify-evenly items-center">
+        <div class="flex gap-4">
+            <a href=""><i class="fa-brands fa-2xl text-white fa-instagram hover:text-pink-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a href=""><i class="fa-brands fa-2xl text-white fa-github hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a href=""><i class="fa-brands fa-2xl text-white fa-tiktok hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda"><i class="fa-brands fa-2xl text-white fa-whatsapp hover:text-green-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+        </div>
+        <hr>
+        <div>
+            <p class="text-white">&copy;CodeXSolutions 2024, Allright reserved.</p>
+        </div>
+    </footer>
 
 
 
