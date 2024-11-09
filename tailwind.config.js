@@ -5,8 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bebas: ['"Bebas Neue"', 'cursive'],
-        bona: ['Bona Nova SC', 'serif'],
+        bebas: ['Bebas', 'cursive'],
+        passionate: ['passionate', 'serif'],
+        luckiestGuy: ['Luckiest Guy', 'sans-serif'],
+        sourGummy: ['Sour Gummy', 'cursive'],
       },
       colors: {
         'bl': '#ABDAFC',

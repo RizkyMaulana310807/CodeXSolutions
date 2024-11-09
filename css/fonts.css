@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Bebas'; /* Ganti dengan nama font yang Anda inginkan */
+  src: url('./fonts/BebasNeue-Regular.ttf') format('truetype'); /* Ganti dengan path dan format font yang sesuai */
+  font-weight: normal; /* Atur sesuai dengan berat font */
+  font-style: normal;  /* Atur sesuai dengan gaya font */
+}
+
+@font-face {
+  font-family: 'passionate'; /* Ganti dengan nama font yang Anda inginkan */
+  src: url('./fonts/Feeling Passionate.otf') format('opentype'); /* Ganti dengan path dan format font yang sesuai */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Luckiest Guy'; /* Ganti dengan nama font yang Anda inginkan */
+  src: url('./fonts/LuckiestGuy-Regular.ttf') format('truetype'); /* Ganti dengan path dan format font yang sesuai */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sour Gummy'; /* Ganti dengan nama font yang Anda inginkan */
+  src: url('./fonts/SourGummy-VariableFont_wdth,wght.ttf') format('truetype'); /* Ganti dengan path dan format font yang sesuai */
+  font-weight: normal;
+  font-style: normal;
+}
