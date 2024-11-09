@@ -1,0 +1,4 @@
+.shadow-keycaps-bl {
+  @apply shadow-none;
+  box-shadow: 0px 10px 1px #99c4e2;
+}
