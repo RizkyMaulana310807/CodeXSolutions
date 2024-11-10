@@ -16,7 +16,7 @@
 <body class="flex h-screen">
     <div class="flex w-full">
         <!-- Sidebar -->
-        <div class="fixed h-screen bg-gray-900 text-white transition-all duration-300 w-20 hover:w-64 group">
+        <div class="fixed h-screen bg-gray-900 text-white transition-all duration-300 w-20 hover:w-64 group z-50">
             <!-- Logo Section -->
             <div class="h-20 flex items-center justify-center bg-gray-800 w-20 rounded-lg">
                 <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center">
@@ -38,7 +38,7 @@
                     <span class="ml-3 whitespace-nowrap transition-all duration-300 opacity-0 group-hover:opacity-100 w-0 group-hover:w-auto overflow-hidden">Users</span>
                 </a>
                 <a href="#" onclick="showContent('calendar')" class="menu-link flex items-center h-14 px-3 my-1 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors duration-200">
-                    <i class="fas fa-shopping-cart text-xl min-w-[2rem] text-center"></i>
+                    <i class="fas fa-calendar text-xl min-w-[2rem] text-center"></i>
                     <span class="ml-3 whitespace-nowrap transition-all duration-300 opacity-0 group-hover:opacity-100 w-0 group-hover:w-auto overflow-hidden">calendar</span>
                 </a>
                 <a href="#" onclick="showContent('reports')" class="menu-link flex items-center h-14 px-3 my-1 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors duration-200">
@@ -156,8 +156,8 @@
             </div>
 
 
-            <div id="users" class="content-section bg-rd w-full h-full flex-col p-4">
-                <h1 class="text-2xl font-bold">Users</h1>
+            <div id="users" class="content-section hidden w-full h-full flex-col p-4">
+                <h1 class="text-2xl font-bold text-white">Users</h1>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
                     <?php
                     // Data dummy
@@ -212,9 +212,30 @@
             </div>
 
 
-            <div id="calendar" class="content-section hidden bg-rd w-full h-full flex-col p-4">
-                <h1 class="text-2xl font-bold">Deadline</h1>
-                <p>This is the Deadline content.</p>
+            <div id="calendar" class="content-section w-full h-full flex-col p-4">
+                <h1 class="text-2xl font-bold text-white">Deadline</h1>
+                <p class="text-white">This is the Deadline content.</p>
+                <div class="flex w-full h-full p-4">
+                    <div class="w-full mx-auto">
+                        <div class="max-w-4xl mx-auto">
+                            <div class="text-center">
+                                <h1 class="text-3xl font-bold text-white">Calendar</h1>
+                                <div class="mb-4">
+                                    <div class="flex justify-center">
+                                        <button id="prevBtn" onclick="changeMonth('prev')" class="bg-blue-500 text-white px-4 py-2 rounded-l hover:bg-blue-600">Previous</button>
+                                        <button id="nextBtn" onclick="changeMonth('next')" class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600">Next</button>
+                                    </div>
+                                </div>
+                                <h2 class="text-2xl font-semibold text-white" id="monthYear"></h2>
+                            </div>
+
+                            <div id="calendar-container" class="grid grid-cols-7 gap-2 bg-white p-4 rounded-lg shadow w-full h-full">
+                                <!-- Calendar content will be loaded here -->
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
             </div>
 
 
@@ -265,6 +286,69 @@
             document.getElementById(contentId).classList.remove('hidden');
             document.getElementById(contentId).classList.add('grid');
         }
+        let currentMonth = <?php echo date('m'); ?>;
+        let currentYear = <?php echo date('Y'); ?>;
+        const startYear = <?php echo date('Y'); ?>;
+        const maxYear = startYear + 2;
+
+        function loadCalendar(month, year) {
+            $.ajax({
+                url: 'get_calendar.php',
+                type: 'GET',
+                data: {
+                    month: month,
+                    year: year
+                },
+                success: function(response) {
+                    $('#calendar-container').html(response);
+                    updateMonthYear(month, year);
+                    updateButtonStates();
+                }
+            });
+        }
+
+        function changeMonth(direction) {
+            if (direction === 'prev') {
+                currentMonth--;
+                if (currentMonth < 1) {
+                    currentMonth = 12;
+                    currentYear--;
+                }
+            } else {
+                currentMonth++;
+                if (currentMonth > 12) {
+                    currentMonth = 1;
+                    currentYear++;
+                }
+            }
+            loadCalendar(currentMonth, currentYear);
+        }
+
+        function updateMonthYear(month, year) {
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            document.getElementById('monthYear').textContent = `${monthNames[month - 1]} ${year}`;
+        }
+
+        function updateButtonStates() {
+            // Disable Previous button if we're at the start date
+            const isPrevDisabled = currentYear === startYear && currentMonth === 1;
+            document.getElementById('prevBtn').disabled = isPrevDisabled;
+            document.getElementById('prevBtn').classList.toggle('opacity-50', isPrevDisabled);
+            document.getElementById('prevBtn').classList.toggle('cursor-not-allowed', isPrevDisabled);
+
+            // Disable Next button if we're at the max date
+            const isNextDisabled = currentYear === maxYear && currentMonth === 12;
+            document.getElementById('nextBtn').disabled = isNextDisabled;
+            document.getElementById('nextBtn').classList.toggle('opacity-50', isNextDisabled);
+            document.getElementById('nextBtn').classList.toggle('cursor-not-allowed', isNextDisabled);
+        }
+
+        // Load initial calendar
+        $(document).ready(function() {
+            loadCalendar(currentMonth, currentYear);
+        });
     </script>
 </body>
 

@@ -273,11 +273,11 @@
     </main>
     <footer class="bg-yl flex flex-col h-40 justify-evenly items-center">
         <div class="flex gap-4">
-            <a href=""><i class="fa-brands fa-2xl text-gray-800 fa-instagram hover:text-pink-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
-            <a href=""><i class="fa-brands fa-2xl text-gray-800 fa-github hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
-            <a href=""><i class="fa-brands fa-2xl text-gray-800 fa-tiktok hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
-            <a href=""><i class="fa-solid fa-2xl text-gray-800 fa-envelope hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
-            <a href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda"><i class="fa-brands fa-2xl text-gray-800 fa-whatsapp hover:text-green-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a target="_blank" href="https://www.instagram.com/codex._solutions/profilecard/?igsh=cjk4NXRuMXFscGt6"><i class="fa-brands fa-2xl text-gray-800 fa-instagram hover:text-pink-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a target="_blank" href="https://github.com/RizkyMaulana310807"><i class="fa-brands fa-2xl text-gray-800 fa-github hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a target="_blank" href="https://vm.tiktok.com/ZSjAkD8KY/"><i class="fa-brands fa-2xl text-gray-800 fa-tiktok hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a target="_blank" href="mailto:rizkymaulana.bussinese@gmail.com"><i class="fa-solid fa-2xl text-gray-800 fa-envelope hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a target="_blank" href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda"><i class="fa-brands fa-2xl text-gray-800 fa-whatsapp hover:text-green-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
         </div>
         <hr>
         <div>
