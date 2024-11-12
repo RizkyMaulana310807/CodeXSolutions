@@ -3,6 +3,8 @@
 module.exports = {
   content: [
     "index.php",
+    "login.php",
+    "detail.php",
     "user-panel/*.php",
     "admin-panel/*.php",
   ],
@@ -51,7 +53,44 @@ module.exports = {
         'none-keycaps': '0px 0px 0px rgba(0, 0, 0, 0',
       },
       keyframes: {
-        rounding: {
+        roundingdrk: {
+          '0%': { 
+            borderTop: '2px solid #ffffff',
+            borderRight: '2px solid transparent',
+            borderBottom: '2px solid transparent',
+            borderLeft: '2px solid transparent',
+            // transform: 'rotate(0deg)'
+          },
+          '25%': { 
+            borderTop: '2px solid transparent',
+            borderRight: '2px solid #ffffff',
+            borderBottom: '2px solid transparent',
+            borderLeft: '2px solid transparent',
+            // transform: 'rotate(90deg)'
+          },
+          '50%': { 
+            borderTop: '2px solid transparent',
+            borderRight: '2px solid transparent',
+            borderBottom: '2px solid #ffffff',
+            borderLeft: '2px solid transparent',
+            // transform: 'rotate(180deg)'
+          },
+          '75%': { 
+            borderTop: '2px solid transparent',
+            borderRight: '2px solid transparent',
+            borderBottom: '2px solid transparent',
+            borderLeft: '2px solid #ffffff',
+            // transform: 'rotate(270deg)'
+          },
+          '100%': { 
+            borderTop: '2px solid #ffffff',
+            borderRight: '2px solid transparent',
+            borderBottom: '2px solid transparent',
+            borderLeft: '2px solid transparent',
+            // transform: 'rotate(360deg)'
+          }
+        },
+        roundingbl: {
           '0%': { 
             borderTop: '2px solid #ABDAFC',
             borderRight: '2px solid transparent',
@@ -90,8 +129,9 @@ module.exports = {
         },
       },
       animation: {
-        "rounding": 'rounding .25s ease-in-out infinite',
-      }
+        "roundingbl": 'roundingbl .25s ease-in-out infinite',
+        "roundingdrk": 'roundingdrk .25s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

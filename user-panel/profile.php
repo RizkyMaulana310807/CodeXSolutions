@@ -15,7 +15,7 @@
 
 <body>
 
-    <main class="xxs:h-[96rem] md:h-screen bg-white flex justify-center items-center xxs:p-6 md:p-0">
+    <main class="xxs:h-[96rem] md:h-screen bg-gray-900 flex justify-center items-center xxs:p-6 md:p-0">
 
         <div class="flex xxs:flex-col md:flex-row w-[95%] md:h-[95%] xxs:gap-6 md:gap-0 justify-between items-center">
             <div class="xxs:w-[20rem] xxs:h-[42rem] w-[24rem] md:h-[36.9rem] flex flex-col">

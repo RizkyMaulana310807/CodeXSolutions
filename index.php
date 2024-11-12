@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="./css/fonts.css">
 </head>
 
-<body>
+<body style="scroll-behavior: smooth; scroll-snap-type: mandatory;">
 
-    <div class="xxs:hidden fixed md:flex justify-center items-center bottom-4 right-4 w-16 h-16 bg-yl rounded-full z-50 animate-rounding cursor-pointer">
+    <div class="xxs:hidden fixed md:flex justify-center items-center bottom-4 right-4 w-16 h-16 bg-yl rounded-full z-50 animate-roundingbl cursor-pointer">
         <div class="absolute -top-2 -right-2 bg-bl border-2 border-gray-700 w-6 h-6 rounded-full flex justify-center items-center text-gray-700">
-            3 <!-- Jumlah item -->
+            3
         </div>
-        <a href="user-panel/user-order.php"><i class="fa-solid fa-cart-shopping fa-2xl text-gray-700"></i></a>
+        <a href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda" target="_blank" class="text-green-700"><i class="fa-brands fa-whatsapp fa-2xl text-green-700"></i></a>
     </div>
 
     <!-- navbar -->
@@ -33,14 +33,14 @@
         <!-- menu -->
         <div id="menu-item" class="xxs:hidden md:flex flex gap-4">
             <a href="#" class="border-2 border-transparent underline-offset-4 hover:underline hover:text-pk font-sourGummy duration-200 transition-all ease-in-out">Home</a>
-            <a href="#" class="border-2 border-transparent underline-offset-4 hover:underline hover:text-pk font-sourGummy duration-200 transition-all ease-in-out">Services</a>
-            <a href="#" class="border-2 border-transparent underline-offset-4 hover:underline hover:text-pk font-sourGummy duration-200 transition-all ease-in-out">Testimonial</a>
-            <a href="#" class="border-2 border-transparent underline-offset-4 hover:underline hover:text-pk font-sourGummy duration-200 transition-all ease-in-out">Contact</a>
+            <a href="#services" class="smooth-scroll border-2 border-transparent underline-offset-4 hover:underline hover:text-pk font-sourGummy duration-200 transition-all ease-in-out">Services</a>
+            <a href="#testimonial" class="smooth-scroll border-2 border-transparent underline-offset-4 hover:underline hover:text-pk font-sourGummy duration-200 transition-all ease-in-out">Testimonial</a>
+            <a href="#contact" class="smooth-scroll border-2 border-transparent underline-offset-4 hover:underline hover:text-pk font-sourGummy duration-200 transition-all ease-in-out">Contact</a>
         </div>
 
         <!-- button -->
         <div class="bg-bl md:border-2 shadow-keycaps-bl md:border-gray-700 rounded-xl font-semibold xxs:border-0 xxs:px-0 xxs:py-0 md:px-6 md:py-2 text-black transform active:translate-y-[10px] active:text-gray-700 active:shadow-active-bl transition-all duration-75 ease-in-out">
-            <a href="#" class="xxs:hidden md:flex font-sourGummy">Log In</a>
+            <a href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda" class="xxs:hidden md:flex font-sourGummy">Order Now</a>
             <i class="fa-solid fa-bars xxs:flex md:hidden p-2 border-2 border-gray-700 rounded-xl" id="toggle-sidebar"></i>
         </div>
 
@@ -84,13 +84,13 @@
             <div class="flex md:w-1/2 flex-col justify-evenly px-6 xs:w-full xxs:w-full md:text-left xs:text-center xs:justify-center xs:gap-4 xxs:text-center xxs:justify-center xxs:gap-4">
                 <h1 class="md:text-7xl xl:text-8xl font-bebas text-gray-900 xs:text-7xl xxs:text-5xl"><span class="hover:text-green-500 drop-shadow-md transition-all duration-200 ease-in-out">Grow</span> your Online <span class="hover:text-blue-500 drop-shadow-md transition-all duration-200 ease-in-out">World</span> Together</h1>
                 <p class="md:text-sm text-md text-slate-700 font-sourGummy">Temukan solusi <span>IT</span> anda di sini</p>
-                <span"><a href="#" class="md:scale-75 lg:scale-100 bg-bl shadow-keycaps-bl active:shadow-active-bl transform active:translate-y-[10px] border-2 border-gray-700 text-black inline-flex gap-4 items-center justify-center px-4 py-2 rounded-lg hover:text-gray-700 font-sourGummy transition-all duration-75 ease-in-out">Services <i class="fa-solid fa-right-long"></i></a></span>
+                <span><a href="#services" class="smooth-scroll md:scale-75 lg:scale-100 bg-bl shadow-keycaps-bl active:shadow-active-bl transform active:translate-y-[10px] border-2 border-gray-700 text-black inline-flex gap-4 items-center justify-center px-4 py-2 rounded-lg hover:text-gray-700 font-sourGummy transition-all duration-75 ease-in-out">Services <i class="fa-solid fa-right-long"></i></a></span>
             </div>
 
             <div class="md:flex md:w-1/2 justify-center items-center xxs:hidden">
                 <div class="relative group">
                     <!-- Kartu pertama -->
-                    <div class="bg-white inline-flex shadow-2xl hover:shadow-lg flex-col p-4 rounded-lg border-2 border-black hover:scale-110 transition-transform duration-200 ease-in-out transform group-hover:translate-x-44 mb-4">
+                    <div class="bg-white inline-flex shadow-2xl hover:shadow-lg flex-col p-4 rounded-lg border-2 border-gray-700 hover:scale-110 transition-transform duration-200 ease-in-out transform group-hover:translate-x-44 mb-4">
                         <div class="">
                             <img class="w-64 h-64" src="img/illustration/digital_artist_male.jpg" alt="UIUX.jpg">
                         </div>
@@ -101,15 +101,15 @@
                             </div>
                             <div class="py-4 flex flex-row justify-around items-center">
                                 <h1 class="text-white bg-pk rounded-lg px-4 py-2 font-sourGummy border-2 border-gray-700">Avaliable</h1>
-                                <button class="bg-bl shadow-keycaps-bl border-2 border-black py-2 px-4 rounded-lg hover:text-text-gray-800 active:translate-y-[10px] active:shadow-active-bl font-sourGummy transition-all duration-75 ease-in-out">Order now</button>
+                                <button onclick="window.location.href = 'https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda'" class="bg-bl shadow-keycaps-bl border-2 border-black py-2 px-4 rounded-lg hover:text-text-gray-800 active:translate-y-[10px] active:shadow-active-bl font-sourGummy transition-all duration-75 ease-in-out">Order now</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Kartu kedua (ditempatkan di atas kartu pertama) -->
-                    <div class="bg-white inline-flex shadow-2xl hover:shadow-lg flex-col p-4 rounded-lg border-2 border-black absolute top-4 left-4 hover:scale-110 transition-transform duration-200 ease-in-out transform group-hover:-translate-x-36">
-                        <div class="">
-                            <img class="w-64 h-64" src="img/illustration/developer_male.jpg" alt="WEBDEV.jpg">
+                    <div class="bg-white inline-flex shadow-2xl hover:shadow-lg flex-col p-4 rounded-lg border-2 border-gray-700 absolute top-4 left-4 hover:scale-110 transition-transform duration-200 ease-in-out transform group-hover:-translate-x-36">
+                        <div class="mix-blend-multiply">
+                            <img class="w-64 h-64 mix-blend-multiply" src="img/illustration/developer_male.jpg" alt="WEBDEV.jpg">
                         </div>
                         <div>
                             <div class="py-4">
@@ -118,7 +118,7 @@
                             </div>
                             <div class="py-4 flex flex-row justify-around items-center">
                                 <h1 class="text-white bg-pk rounded-lg px-4 py-2 font-sourGummy border-2 border-gray-700">Avaliable</h1>
-                                <button class="bg-bl shadow-keycaps-bl border-2 border-black py-2 px-4 rounded-lg hover:text-text-gray-800 active:translate-y-[10px] active:shadow-active-bl font-sourGummy transition-all duration-75 ease-in-out">Order now</button>
+                                <button onclick="window.location.href = 'https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda'" class="bg-bl shadow-keycaps-bl border-2 border-black py-2 px-4 rounded-lg hover:text-text-gray-800 active:translate-y-[10px] active:shadow-active-bl font-sourGummy transition-all duration-75 ease-in-out">Order now</button>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
             <img src="img/logo/paypal.png" alt="paypal.png" class="xxs:h-14 xxs:w-14 md:w-32 md:h-32 object-contain filter grayscale hover:grayscale-0 transition duration-300">
         </div>
 
-        <div class="flex flex-col justify-center items-center gap-4 p-6">
+        <div id="services" class="flex flex-col justify-center items-center gap-4 p-6">
             <h1 class="font-sourGummy font-bold text-2xl md:text-3xl xl:text-4xl text-center">Bikin website harga murah!</h1>
             <p class="font-sourGummy text-center">Kami menyediakan jasa pembuatan Web, Design, dan IT Support</p>
             <div class="flex flex-col xxs:gap-4 sm:gap-4 md:flex-row md:gap-6 xl:gap-9">
@@ -170,26 +170,26 @@
             </div>
 
 
-            <div class="xxs:flex xxs:flex-col xxs:justify-evenly xxs:w-[95%] xxs:m-auto xxs:px-4 xxs:rounded-lg md:rounded-none xxs:h-96 md:w-1/2 md:h-96 md:flex-col bg-yl md:p-6 md:justify-around">
+            <div class="xxs:flex xxs:flex-col xxs:justify-evenly xxs:w-[95%] xxs:m-auto xxs:px-4 xxs:rounded-lg md:rounded-none xxs:h-96 md:w-1/2 md:h-96 md:flex-col bg-yl md:gap-2 md:p-6 md:justify-around">
 
                 <h1 class="xxs:text-sm text-2xl font-bold font-bona text-gray-700 font-sourGummy">Kenapa <span class="text-gray-900 bg-pk border-2 border-gray-700 shadow-keycaps-pk rounded-lg px-2 py-1">CodeX</span>?</h1>
 
                 <div class="flex justify-evenly gap-4">
-                    <div class="bg-[#ABDAFC] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-bl hover:shadow-active-bl hover:translate-y-[10px] transition-all ease-in-out">
+                    <div class="bg-[#ABDAFC] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-bl hover:shadow-active-bl hover:translate-y-[10px] md:p-4 transition-all ease-in-out">
                         <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">200+</h1>
                         <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami sudah melayani lebih dari 200+ Client</p>
                     </div>
-                    <div class="bg-[#F88DAD] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-pk hover:shadow-active-pk hover:translate-y-[10px] transition-all ease-in-out">
+                    <div class="bg-[#F88DAD] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-pk hover:shadow-active-pk hover:translate-y-[10px] md:p-4 transition-all ease-in-out">
                         <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">75+</h1>
                         <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami telah menyelesaikan lebih dari 75+ Project</p>
                     </div>
-                    <div class="bg-[#FAC748] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-yl hover:shadow-active-yl hover:translate-y-[10px] transition-all ease-in-out">
+                    <div class="bg-[#FAC748] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-yl hover:shadow-active-yl hover:translate-y-[10px] md:p-4 transition-all ease-in-out">
                         <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">175+</h1>
                         <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami telah mendapat 275 Review Positive</p>
                     </div>
                 </div>
 
-                <div class="bg-transparent p-6 rounded-xl shadow-lg text-gray-700">
+                <div class="bg-transparent p-6 rounded-xl text-gray-700">
                     <i class="fa-solid fa-quote-left fa-2xl xs:fa-xs group-hover:text-white"></i>
                     <h1 class="font-sourGummy text-gray-700">Kami memberikan layanan gratis revisi untuk kesalahan pengerjaan di project</h1>
                     <h1 class="font-sourGummy font-light text-xs text-gray-500">*Request tambahan membutuhkan biaya tambahan</h1>
@@ -199,7 +199,7 @@
 
         </div>
 
-        <div class="flex p-6 h-96 flex-col justify-evenly">
+        <div id="testimonial" class="flex p-6 h-96 flex-col justify-evenly">
             <div class="text-center">
                 <h1 class="text-4xl font-sourGummy">What <span class="text-[#FAC748]">Client</span> Say!</h1>
                 <p></p>
@@ -234,14 +234,14 @@
         <div class="bg-transparentw-full flex justify-center">
 
             <div class="bg-yl w-[80%] rounded-xl p-4 flex flex-row justify-between items-center drop-shadow-lg">
-                <h1 class="text-gray-700 font-sourGummy">Siap untuk memulai? </h1>
-                <button class="font-sourGummy bg-bl px-12 py-2 rounded-xl border-2 shadow-keycaps-bl text-black border-gray-700 hover:shadow-active-bl hover:text-gray-700 hover:translate-y-[10px] transition-all ease-in-out duration-200">Start</button>
+                <h1 class="text-gray-700 font-sourGummy">Mau Order? cek dulu detailnya biar ga salah order</h1>
+                <button onclick="window.location.href ='detail.php'" class="font-sourGummy bg-bl px-12 py-2 rounded-xl border-2 shadow-keycaps-bl text-black border-gray-700 hover:shadow-active-bl hover:text-gray-700 hover:translate-y-[10px] transition-all ease-in-out duration-200">Detail</button>
             </div>
 
         </div>
 
         <div>
-            <div class="flex items-center justify-center min-h-screen bg-gray-100">
+            <div id="contact" class="flex items-center justify-center min-h-screen bg-gray-100">
                 <div class="w-full max-w-lg p-8 bg-yl border-8 border-ylb rounded-2xl shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-700 mb-6 text-center font-sourGummy">Get in touch <i class="fa-solid fa-handshake"></i></h2>
                     <form action="#" method="POST" class="space-y-4">
@@ -262,7 +262,7 @@
                         </div>
                         <!-- Tombol Submit -->
                         <div class="text-center">
-                            <button type="submit" class="px-6 py-2 font-sourGummy text-black bg-bl shadow-keycaps-bl border-2 border-gray-700 rounded-lg active:shadow-active-bl hover:text-gray-700 transform active:translate-y-[10px] focus:ring-4 focus:ring-blue-300 transition-all duration-75 ease-in-out">Send an email</button>
+                            <button type="submit" class="px-6 py-2 font-sourGummy text-black bg-bl shadow-keycaps-bl border-2 border-gray-700 rounded-lg fhomehover:text-gray-700 transform focus:ring-4 focus:ring-blue-300 transition-all duration-75 ease-in-out cursor-not-allowed" disabled title="Still Development">Send an email</button>
                         </div>
                     </form>
                 </div>
@@ -283,11 +283,21 @@
         <div>
             <p class="text-gray-800 font-sourGummy">&copy;CodeXSolutions 2024, Allright reserved.</p>
         </div>
+        <div>
+            <p class="underline underline-offset-8 hover:text-bl transition-all duration-200 ease-in-out">S&K</p>
+        </div>
     </footer>
 
     <script>
         $(document).ready(function() {
 
+            $('.smooth-scroll').click(function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+
+                }, 500);
+            });
             $('#toggle-sidebar').click(function() {
                 $('#sidebar').toggleClass('-translate-x-full');
                 $('#main-content').toggleClass('ml-64');

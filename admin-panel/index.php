@@ -66,19 +66,19 @@
         <!-- Main Content -->
         <div class="flex-1 ml-20 group-hover:ml-64 bg-gray-700 transition-all duration-300 p-4 w-full">
             <!-- Dashboard -->
-            <div id="dashboard" class="hidden content-section w-full h-full flex-col p-4">
+            <div id="dashboard" class="flex content-section w-full h-full flex-col p-4">
                 <h1 class="text-2xl font-bold text-white">Dashboard</h1>
                 <div class="flex h-full w-full flex-col">
-                    <div class="flex flex-row p-4 w-full h-16 drop-shadow-xl">
+                    <div class="flex flex-row p-4 w-full h-24 drop-shadow-xl">
                         <div class="gap-4 w-full h-11 flex items-center">
-                            <button onclick="showData('masuk')" class="bg-bl px-6 py-2 rounded-lg">Masuk</button>
-                            <button onclick="showData('terima')" class="bg-bl px-6 py-2 rounded-lg">Di terima</button>
-                            <button onclick="showData('berakhir')" class="bg-bl px-6 py-2 rounded-lg">Berakhir</button>
+                            <button onclick="showData('masuk')" class="bg-bl px-6 py-2 rounded-lg shadow-keycaps-bl border-2 border-gray-700 active:shadow-active-bl transform active:translate-y-[10px] transition-all duration-75 ease-in-out">Masuk</button>
+                            <button onclick="showData('terima')" class="bg-bl px-6 py-2 rounded-lg shadow-keycaps-bl border-2 border-gray-700 active:shadow-active-bl transform active:translate-y-[10px] transition-all duration-75 ease-in-out">Di terima</button>
+                            <button onclick="showData('berakhir')" class="bg-bl px-6 py-2 rounded-lg shadow-keycaps-bl border-2 border-gray-700 active:shadow-active-bl transform active:translate-y-[10px] transition-all duration-75 ease-in-out">Berakhir</button>
                         </div>
                         <div class="gap-4 w-full h-11 flex flex-row justify-end">
-                            <button class="px-6 py-2 bg-bl rounded-lg">Sort</button>
-                            <div class="bg-bl flex flex-row rounded-lg border-2 border-transparent focus-within:ring-2 focus-within:ring-white focus-within:border-white">
-                                <label for="searchInput" class="flex items-center"><i class="fa-solid fa-magnifying-glass px-4 text-2xl flex text-center items-center"></i></label>
+                            <button class="px-6 py-2 bg-bl rounded-lg border-2 border-gray-700 shadow-keycaps-bl active:shadow-active-bl translate active:translate-y-[10px] transition-all duration-75 ease-in-out">Sort</button>
+                            <div class="bg-bl shadow-keycaps-bl border-2 border-gray-700 flex flex-row rounded-lg focus-within:ring-2 focus-within:ring-bl focus-within:border-white focus-within:shadow-active-bl focus-within:translate-y-[10px] transition-all duration-75 ease-in-out">
+                                <label for="searchInput" class="flex items-center"><i class="fa-solid fa-magnifying-glass px-4 text-2xl flex text-gray-700 text-center items-center"></i></label>
                                 <input class="w-72 p-4 rounded-r-lg focus:outline-none" type="text" name="searchInput" id="searchInput" placeholder="Search ...">
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                     // Loop data profil
                     foreach ($profiles as $profile) {
                         echo '
-         <div class="flex flex-col group">
+        <div class="flex flex-col group">
                 <!-- header -->
                 <div class="flex flex-col items-center gap-4 bg-yl py-4 rounded-t-lg">
                     <div class="absolute left-0 top-0 p-6 xxs:flex md:hidden">
@@ -191,7 +191,7 @@
                 </div>
                 <hr>
                 <!-- info -->
-                <div class="hidden bg-yl group-hover:flex group-hover:fixed flex-col items-center rounded-b-lg">
+                <div class="hidden bg-yl group-hover:flex group-hover:fixed flex-col items-center rounded-b-lg transition-all duration-200 ease-in-out">
                     <div class="flex flex-col">
                         <p class="text-gray-800 font-sourGummy text-xs">Nama lengkap</p>
                         <p class="bg-bl py-2 px-4 shadow-keycaps-bl font-sourGummy text-gray-800 text-xs w-56 rounded-lg border-2 border-gray-700">Rizky Maulana</p>
@@ -212,7 +212,7 @@
             </div>
 
 
-            <div id="calendar" class="content-section w-full h-full flex-col p-4">
+            <div id="calendar" class="hidden content-section w-full h-full flex-col p-4">
                 <h1 class="text-2xl font-bold text-white">Deadline</h1>
                 <p class="text-white">This is the Deadline content.</p>
                 <div class="flex w-full h-full p-4">
@@ -233,7 +233,7 @@
                                 <!-- Calendar content will be loaded here -->
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>
@@ -251,9 +251,21 @@
             </div>
 
 
-            <div id="settings" class="content-section hidden bg-rd w-full h-full flex-col p-4">
-                <h1 class="text-2xl font-bold">Settings</h1>
-                <p>This is the Settings content.</p>
+            <div id="settings" class="content-section hidden w-full h-full flex-col p-4">
+                <div class="flex w-full flex-row">
+                    <div class="bg-yl flex flex-row w-full py-6 gap-6">
+                        <div class="flex items-center p-4">
+                            <h1 class="text-gray-700">Website Service</h1>
+                        </div>
+                        <div class="flex flex-row gap-6 p-2">
+                            <button class="bg-bl flex px-6 py-2 rounded-lg border-2 border-gray-700 cursor-not-allowed shadow-keycaps-bl active:shadow-active-bl transform active:translate-y-[10px] transition-all duration-75 ease-in-out">Enable</button>
+                            <button class="bg-bl flex px-6 py-2 rounded-lg border-2 border-gray-700 cursor-not-allowed shadow-keycaps-bl active:shadow-active-bl transform active:translate-y-[10px] transition-all duration-75 ease-in-out">Disable</button>
+                        </div>
+                        <div class="flex items-center">
+                            <h1 class="flex items-center gap-6 text-gray-700">Status <span class="bg-gr px-4 py-2 rounded-lg rounded-2 shadow-keycaps-gr border-2 border-black animate-roundingdrk">Enable</span></h1>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
