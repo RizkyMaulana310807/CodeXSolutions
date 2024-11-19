@@ -18,7 +18,7 @@
         <!-- logo -->
         <div class="flex flex-row items-center gap-2 hover:cursor-pointer active:translate-y-[10px] transition-all ease-in-out duration-75 group">
             <img class="md:h-9 md:w-9 xxs:w-6 xxs:h-6 rounded-full group-active:-translate-y-[10px] transition-all ease-in-out duration-75" src="img/logo/logo.png" alt="logo.png">
-            <h1 class="xxs:text-xs xl:text-lg font-semibold bg-bl rounded-lg xxs:px-2 xxs:py-1 md:px-4 md:py-2 shadow-keycaps-bl border-2 border-gray-800 group-active:shadow-active-bl transition-all ease-in-out duration-200 font-sourGummy"><span class="text-gray-900 font-bold xxs:text-sm md:text-xl font-passionate">CodeX</span> Solutions</h1>
+            <h1 onclick="window.location.href='index.php'" class="xxs:text-xs xl:text-lg font-semibold bg-bl rounded-lg xxs:px-2 xxs:py-1 md:px-4 md:py-2 shadow-keycaps-bl border-2 border-gray-800 group-active:shadow-active-bl transition-all ease-in-out duration-200 font-sourGummy"><span class="text-gray-900 font-bold xxs:text-sm md:text-xl font-passionate">CodeX</span> Solutions</h1>
         </div>
 
         <!-- menu -->

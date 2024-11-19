@@ -19,7 +19,7 @@
         <div class="absolute -top-2 -right-2 bg-bl border-2 border-gray-700 w-6 h-6 rounded-full flex justify-center items-center text-gray-700">
             3
         </div>
-        <a href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda" target="_blank" class="text-green-700"><i class="fa-brands fa-whatsapp fa-2xl text-green-700"></i></a>
+        <a href="https://wa.me/+628882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda" target="_blank" class="text-green-700"><i class="fa-brands fa-whatsapp fa-2xl text-green-700"></i></a>
     </div>
 
     <!-- navbar -->
@@ -27,7 +27,7 @@
         <!-- logo -->
         <div class="flex flex-row items-center gap-2 hover:cursor-pointer active:translate-y-[10px] transition-all ease-in-out duration-75 group">
             <img class="md:h-9 md:w-9 xxs:w-6 xxs:h-6 rounded-full group-active:-translate-y-[10px] transition-all ease-in-out duration-75" src="img/logo/logo.png" alt="logo.png">
-            <h1 class="xxs:text-xs xl:text-lg font-semibold bg-bl rounded-lg xxs:px-2 xxs:py-1 md:px-4 md:py-2 shadow-keycaps-bl border-2 border-gray-800 group-active:shadow-active-bl transition-all ease-in-out duration-200 font-sourGummy"><span class="text-gray-900 font-bold xxs:text-sm md:text-xl font-passionate">CodeX</span> Solutions</h1>
+            <h1 onclick="window.location.href='index.php'" class="xxs:text-xs xl:text-lg font-semibold bg-bl rounded-lg xxs:px-2 xxs:py-1 md:px-4 md:py-2 shadow-keycaps-bl border-2 border-gray-800 group-active:shadow-active-bl transition-all ease-in-out duration-200 font-sourGummy"><span class="text-gray-900 font-bold xxs:text-sm md:text-xl font-passionate">CodeX</span> Solutions</h1>
         </div>
 
         <!-- menu -->
@@ -40,7 +40,7 @@
 
         <!-- button -->
         <div class="bg-bl md:border-2 shadow-keycaps-bl md:border-gray-700 rounded-xl font-semibold xxs:border-0 xxs:px-0 xxs:py-0 md:px-6 md:py-2 text-black transform active:translate-y-[10px] active:text-gray-700 active:shadow-active-bl transition-all duration-75 ease-in-out">
-            <a href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda" class="xxs:hidden md:flex font-sourGummy">Order Now</a>
+            <a href="https://wa.me/+628882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda" class="xxs:hidden md:flex font-sourGummy">Order Now</a>
             <i class="fa-solid fa-bars xxs:flex md:hidden p-2 border-2 border-gray-700 rounded-xl" id="toggle-sidebar"></i>
         </div>
 
@@ -101,7 +101,7 @@
                             </div>
                             <div class="py-4 flex flex-row justify-around items-center">
                                 <h1 class="text-white bg-pk rounded-lg px-4 py-2 font-sourGummy border-2 border-gray-700">Avaliable</h1>
-                                <button onclick="window.location.href = 'https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda'" class="bg-bl shadow-keycaps-bl border-2 border-black py-2 px-4 rounded-lg hover:text-text-gray-800 active:translate-y-[10px] active:shadow-active-bl font-sourGummy transition-all duration-75 ease-in-out">Order now</button>
+                                <button onclick="window.location.href = 'https://wa.me/+628882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda'" class="bg-bl shadow-keycaps-bl border-2 border-black py-2 px-4 rounded-lg hover:text-text-gray-800 active:translate-y-[10px] active:shadow-active-bl font-sourGummy transition-all duration-75 ease-in-out">Order now</button>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                 <div class="bg-bl font-sourGummy shadow-keycaps-bl p-4 rounded-lg justify-evenly xxs:scale-75 sm:scale-75 md:scale-100 inline-flex flex-col h-64 w-64 drop-shadow-2xl border-2 border-gray-700 hover:border-3 hover:shadow-none transition-all duration-200 ease-in-out transform xxs:hover:scale-90 md:hover:scale-105">
                     <span><i class="fa-solid fa-brush w-12 h-12 text-left flex justify-center items-center border-2 border-black rounded-full bg-white"></i></span>
                     <h1 class="font-bold mt-4 text-left">UI / UX</h1>
-                    <p class="text-left">Jasa buat design figma dengan harga terjangkau mulai dari</p>
+                    <p class="text-left">Jasa buat design figma dengan harga terjangkau</p>
                 </div>
 
                 <!-- Website Developer Card -->
@@ -176,16 +176,16 @@
 
                 <div class="flex justify-evenly gap-4">
                     <div class="bg-[#ABDAFC] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-bl hover:shadow-active-bl hover:translate-y-[10px] md:p-4 transition-all ease-in-out">
-                        <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">200+</h1>
-                        <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami sudah melayani lebih dari 200+ Client</p>
+                        <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">3</h1>
+                        <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami sudah melayani lebih dari 3 Client</p>
                     </div>
                     <div class="bg-[#F88DAD] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-pk hover:shadow-active-pk hover:translate-y-[10px] md:p-4 transition-all ease-in-out">
-                        <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">75+</h1>
-                        <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami telah menyelesaikan lebih dari 75+ Project</p>
+                        <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">4</h1>
+                        <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami telah menyelesaikan lebih dari 4 Project</p>
                     </div>
                     <div class="bg-[#FAC748] drop-shadow-md inline-flex flex-col text-center rounded-lg border-2 border-gray-700 shadow-keycaps-yl hover:shadow-active-yl hover:translate-y-[10px] md:p-4 transition-all ease-in-out">
-                        <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">175+</h1>
-                        <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami telah mendapat 275 Review Positive</p>
+                        <h1 class="underline underline-offset-4 xxs:py-2 md:py-6 xxs:text-sm md:text-base font-bold font-sourGummy text-slate-900">0</h1>
+                        <p class="xxs:text-xs font-light text-slate-900 xxs:py-2 md:py-6 md:text-base font-sourGummy">Kami telah mendapat 0 Review</p>
                     </div>
                 </div>
 
@@ -235,7 +235,7 @@
 
             <div class="bg-yl w-[80%] rounded-xl p-4 flex flex-row justify-between items-center drop-shadow-lg">
                 <h1 class="text-gray-700 font-sourGummy">Mau Order? cek dulu detailnya biar ga salah order</h1>
-                <button onclick="window.location.href ='detail.php'" class="font-sourGummy bg-bl px-12 py-2 rounded-xl border-2 shadow-keycaps-bl text-black border-gray-700 hover:shadow-active-bl hover:text-gray-700 hover:translate-y-[10px] transition-all ease-in-out duration-200">Detail</button>
+                <button onclick="window.location.href ='detail.php'" class="font-sourGummy bg-bl px-12 py-2 rounded-xl border-2 shadow-keycaps-bl text-black border-gray-700 active:shadow-active-bl active:text-gray-700 active:translate-y-[10px] transition-all ease-in-out duration-200">Detail</button>
             </div>
 
         </div>
@@ -277,7 +277,7 @@
             <a target="_blank" href="https://github.com/RizkyMaulana310807"><i class="fa-brands fa-2xl text-gray-800 fa-github hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
             <a target="_blank" href="https://vm.tiktok.com/ZSjAkD8KY/"><i class="fa-brands fa-2xl text-gray-800 fa-tiktok hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
             <a target="_blank" href="mailto:rizkymaulana.bussinese@gmail.com"><i class="fa-solid fa-2xl text-gray-800 fa-envelope hover:text-black transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
-            <a target="_blank" href="https://wa.me/08882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda"><i class="fa-brands fa-2xl text-gray-800 fa-whatsapp hover:text-green-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
+            <a target="_blank" href="https://wa.me/+628882125177?text=halo,%20saya%20tertarik%20dengan%20produk%20anda"><i class="fa-brands fa-2xl text-gray-800 fa-whatsapp hover:text-green-700 transform hover:scale-110 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"></i></a>
         </div>
         <hr>
         <div>
